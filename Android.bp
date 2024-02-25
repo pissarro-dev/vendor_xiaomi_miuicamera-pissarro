@@ -57,6 +57,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcamera_mianode_jni.xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["prebuilt/libcamera_mianode_jni.xiaomi.so"],
+        },
+    },
+    system_ext_specific: true,
+    shared_libs: [
+        "libbinder",
+        "libc",
+        "libc++",
+        "libcamera_client",
+        "libcamera_metadata",
+        "libcutils",
+        "libdl",
+        "libgui",
+        "libgui_shim_miuicamera",
+        "liblog",
+        "libm",
+        "libutils",
+        "libvndksupport",
+        "libxml2",
+    ]
+}
+
+cc_prebuilt_library_shared {
     name: "libmtkisp_metadata_sys",
     strip: {
         none: true,

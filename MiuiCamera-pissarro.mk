@@ -9,7 +9,8 @@ $(call inherit-product, vendor/xiaomi/miuicamera/MiuiCamera.mk)
 # Native libraries
 PRODUCT_PACKAGES += \
     libcamera_algoup_jni.xiaomi \
-    libcamera_ispinterface_jni.xiaomi
+    libcamera_ispinterface_jni.xiaomi \
+    libcamera_mianode_jni.xiaomi
 
 # Properties
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
